@@ -1,0 +1,145 @@
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root {
+    --cor-primaria: #040D12;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_links {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.principal {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.principal_sobre {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.principal_titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.principal_subtitulo {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.principal_links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    font-family: var(--fonte-secundaria);
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    border: 2px solid var(--cor-terciaria);
+}
+
+.principal_texto_redes {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.link:hover {
+    background-color: var(--cor-hover);
+}
+
+.principal_imagem {
+    width: 50%;
+}
+
+
+.rodape {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    padding: 25px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+}
+
+.curriculo{
+
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho_menu {
+        justify-content: center;
+    }
+
+    .principal {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    
+    .principal_sobre {
+        width:auto;
+    }
+}
